@@ -91,7 +91,7 @@ async def start_command(client: Client, message: Message):
                     ids = [int(int(argument[1]) / abs(client.db_channel.id))]
                 except:
                     return
-            temp_msg = await message.reply("Wait Bro...")
+            temp_msg = await message.reply("ᴡᴀɪᴛ ʙʀᴏ...")
             try:
                 messages = await get_messages(client, ids)
             except:
@@ -147,9 +147,9 @@ async def start_command(client: Client, message: Message):
                 link = await get_shortlink(SHORTLINK_URL, SHORTLINK_API,f'https://telegram.dog/{client.username}?start=verify_{token}')
                 btn = [
                     [InlineKeyboardButton("• ᴄʟɪᴄᴋ ʜᴇʀᴇ •", url=link)],
-                    [InlineKeyboardButton('• ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴛʜᴇ ʙᴏᴛ ', url=full_tut_url)]
+                    [InlineKeyboardButton('• ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴛʜᴇ ʙᴏᴛ •', url=full_tut_url)]
                 ]
-                await message.reply(f"ʙʀᴏ ʏᴏᴜʀ ᴀᴅs ᴛᴏᴋᴇɴ ɪs ᴇxᴘɪʀᴇᴅ, ʀᴇғʀᴇsʜ ʏᴏᴜʀ ᴛᴏᴋᴇɴ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ.\n\nᴛᴏᴋᴇɴ ᴛɪᴍᴇᴏᴜᴛ: {get_exp_time(VERIFY_EXPIRE)}\n\nᴡʜᴀᴛ ɪs ᴛʜᴇ ᴛᴏᴋᴇɴ?\n\nᴛʜɪs ɪs ᴀɴ ᴀᴅs ᴛᴏᴋᴇɴ. Iғ ʏᴏᴜ ᴘᴀss 𝟷 ᴀᴅ, ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜᴇ ʙᴏᴛ ғᴏʀ 𝟸𝟺 ʜᴏᴜʀ ᴀғᴛᴇʀ ᴘᴀssɪɴɢ ᴛʜᴇ ᴀᴅ.", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
+                await message.reply(f"<b>ʙʀᴏ ʏᴏᴜʀ ᴀᴅs ᴛᴏᴋᴇɴ ɪs ᴇxᴘɪʀᴇᴅ, ʀᴇғʀᴇsʜ ʏᴏᴜʀ ᴛᴏᴋᴇɴ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ.\n\nᴛᴏᴋᴇɴ ᴛɪᴍᴇᴏᴜᴛ: {get_exp_time(VERIFY_EXPIRE)}\n\nᴡʜᴀᴛ ɪs ᴛʜᴇ ᴛᴏᴋᴇɴ?\n\nᴛʜɪs ɪs ᴀɴ ᴀᴅs ᴛᴏᴋᴇɴ. Iғ ʏᴏᴜ ᴘᴀss 𝟷 ᴀᴅ, ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜᴇ ʙᴏᴛ ғᴏʀ 𝟸𝟺 ʜᴏᴜʀ ᴀғᴛᴇʀ ᴘᴀssɪɴɢ ᴛʜᴇ ᴀᴅ.</b>", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
 
 # ... (rest of the code remains unchanged)) credit @codeflix_bots @erotixe 
 
