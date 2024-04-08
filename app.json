@@ -46,6 +46,21 @@
       "value": "",
       "required": false
     },
+    "SHORTLINK_URL": {
+      "description": "Your Shortner url. eg: shareus.io",
+      "value": "",
+      "required": false
+    },
+    "SHORTLINK_API": {
+      "description": "shortner api key",
+      "value": "",
+      "required": false
+    },
+    "TUT_VID": {
+      "description": "Verification tutorial video link",
+      "value": "",
+      "required": false
+    },
     "PROTECT_CONTENT": {
       "description": "Protect contents from getting forwarded",
       "value": "False",
