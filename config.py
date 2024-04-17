@@ -21,8 +21,8 @@ OWNER_ID = int(os.environ.get("OWNER_ID", ""))
 #Port
 PORT = os.environ.get("PORT", "8080")
 
-#Database 
-DB_URI = ""
+#Database
+DB_URI = os.environ.get("DATABASE_URL", "")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #Shortner (token system) 
