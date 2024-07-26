@@ -49,7 +49,7 @@ async def bought(client, message):
     if replyed and replyed.photo:
         await client.send_photo(
             photo=replyed.photo.file_id,
-            chat_id=PREMIUM_LOGS,
+            chat_id=PAYMENT_LOGS,
             caption=f'<b>User - {message.from_user.mention}\nUser id - <code>{message.from_user.id}</code>\nusername - <code>{message.from_user.username}</code>\nUser Name - <code>{message.from_user.first_name}</code></b>',
             reply_markup=InlineKeyboardMarkup(
                 [
