@@ -1,0 +1,142 @@
+{
+    "name": "TG File Share/Sharing Bot",
+    "description": "file sharing bot store posts and it can access by special links",
+    "keywords": [
+      "telegram",
+      "file",
+      "sharing"
+    ],
+    "repository": "https://github.com/Sachinanand99/File-Sharing-Telegram-bot",
+    "logo": "https://ibb.co/FgPVtzw",
+    "env": {
+        "ADMINS" : {
+            "description" : "Enter admins no need to add owner id, add with no commas and no hyphens",
+            "value": "",
+            "required": false
+        },
+      "TG_BOT_TOKEN": {
+        "description": "Your Bot token, Get it from @Botfather",
+        "value": ""
+      },
+      "APP_ID":{
+        "description": "your app id, take it from my.telegram.org",
+        "value": ""
+      },
+      "API_HASH":{
+        "description": "your api hash, take it from my.telegram.org",
+        "value": ""
+      },
+      "DB_URL": {
+        "description": "Paste your mongo db url",
+        "value": ""
+      },
+      "DB_NAME":{
+        "description": "Enter your DATABASE_NAME ",
+        "value": "",
+        "required":false
+      },
+      "CHANNEL_ID":{
+        "description": "make a channel (database channel), then make the bot as admin in channel, and it's put channel id",
+        "value": ""
+      },
+      "CHANNEL_LINK":{
+        "description": "Enter your database channel link",
+        "value": ""
+      },
+      "OWNER_ID": {
+        "description": "enter owners id",
+        "value" : ""
+      },
+      "OWNER_TAG":{
+        "description":"Enter owner's tag without @",
+        "value": ""
+      },
+      "TIME": {
+        "description":"Enter the time after which message gets deleted",
+        "value": "60",
+        "required": false
+      },
+      "FORCE_SUB_CHANNEL": {
+        "description": "Enter your channel id for forcesub 1",
+        "value": "0",
+        "required": false
+      },
+      "FORCE_SUB_CHANNEL2": {
+        "description": "Enter your channel id for forcesub 2 ",
+        "value": "0",
+        "required": false
+      },
+      "BOT_STATS_TEXT": {
+        "description": "Enter your custom bot stat text with fillings",
+        "value": "<b>BOT UPTIME</b>\n{uptime}",
+        "required": false
+      },
+      "USER_REPLY_TEXT":{
+        "description": "Enter user reply text when they interact with bot",
+        "value": "❌Don't send me messages directly I'm only File Share bot!",
+        "required" : false
+      },
+      "START_MSG":{
+        "description":"Enter your bot start message when user interact for the first time.",
+        "value": "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.",
+        "required": false
+      },
+      "USE_SHORTLINK":{
+        "description":"Enter True for enabling this feature",
+        "value": "False",
+        "required": false
+      },
+      "SHORTLINK_API_URL": {
+        "description":"Enter your shortlink url",
+        "value" : "",
+        "required":false
+      },
+      "SHORTLINK_API_KEY":{
+        "description": "Enter your shortlink api key",
+        "value" : "",
+        "required" : false
+      },
+      "VERIFY_EXPIRE": {
+        "description" : "Enter your expiration time 24hr = 86400 12hr = 43200",
+        "value": "86400",
+        "required": false
+      },
+      "TUT_VID": {
+        "description" : "Enter tutorial link url",
+        "value": "https://t.me/How_to_Download_7x/32",
+        "required": false
+      },
+      "FORCE_MSG": {
+        "description": "Force message for joining the channel",
+        "value" : "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>",
+        "required": false
+      },
+      "CUSTOM_CAPTION": {
+        "description": "Enter custom caption",
+        "value": null, 
+        "required": false
+      },
+      "PROTECT_CONTENT": {
+        "description" : "Enter True if need to stop forwarding from bot",
+        "value" : "False",
+        "required": false
+      },
+      "DISABLE_CHANNEL_BUTTON": {
+        "description" : "Enter False if need to enable buttons in database channel",
+        "value" : "True",
+        "required" : false
+      }
+    },
+    "buildpacks": [
+      {
+        "url": "heroku/python"
+      }
+    ],
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "eco"
+      }
+    }
+  }
+  

@@ -1,0 +1,18 @@
+# --- For-Bot-Working --------- #
+pyrofork
+TgCrypto
+pyromod==1.5
+# --- For-Database ------------ #
+pymongo
+motor
+umongo
+marshmallow
+dnspython
+# --- For-Web-Response ------- #
+pytz
+requests
+bs4
+shortzy
+aiohttp
+aiofiles
+asyncio
