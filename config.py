@@ -1,5 +1,6 @@
 from operator import add
 import os
+from os import environ,getenv
 import logging
 #import dotenv
 
@@ -49,6 +50,9 @@ OWNER_TAG = os.environ.get("OWNER_TAG", "cosmic_freak")
 #Time in seconds for message delete
 TIME = int(os.environ.get("TIME", "60"))
 
+
+# add premium logs channel id
+PAYMENT_LOGS = int(environ.get('PAYMENT_LOGS', '-1001868871195'))
 
 #Shortner (token system) 
 """
