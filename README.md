@@ -1,58 +1,12 @@
-# File-sharing-Bot
-
-<p align="center">
-  <a href="https://www.python.org">
-    <img src="http://ForTheBadge.com/images/badges/made-with-python.svg" width ="250">
-  </a>
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=FILE+SHARING+!;CREATED+BY+CODEFLIX+DEVELOPER!;A+ADVANCE+BOT+WITH+TOKEN+FEATURE!)
 </p>
 
 
-Telegram Bot to store Posts and Documents and it can Access by Special Links.
-I Guess This Will Be Usefull For Many People.....😇. 
+* <b>𝟸 ғsᴜʙ - [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://github.com/Codeflix-Bots/FileStore)</b>
+* <b>ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ - [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://github.com/Codeflix-Bots/FileStore/tree/AutoDelete)</b>
+* <b>𝟺 ғsᴜʙ - [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://github.com/Codeflix-Bots/FileStore/tree/multi-fsub)</b>
 
-### Changelogs
-1. Ping command changed.
-2. restart command added.
-
-### Features
-- Fully customisable.
-- Customisable welcome
-- More than one Posts in One Link.
-- Can be deployed on heroku directly.
-
-### Setup
-- Add the bot to Database Channel with all permission
-
-### Installation
-#### Deploy on Heroku
-**BEFORE YOU DEPLOY ON HEROKU, YOU SHOULD FORK THE REPO AND CHANGE ITS NAME TO ANYTHING ELSE**<br>
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)</br>
-<a href="https://youtu.be/LCrkRTMkmzE">
-  <img src="https://img.shields.io/badge/How%20to-Deploy-red?logo=youtube" width="147">
-</a><br>
-**Check This Tutorial Video on YouTube for any Help**<br>
-**Thanks to [Erich](https://t.me/ErichDaniken) and his [InFoTel](https://t.me/InFoTel_Group) for this Video**
-
-#### Deploy on Railway
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/1jKLr4)
-
-#### Deploy on Koyeb
-
-The fastest way to deploy the application is to click the **Deploy to Koyeb** button below.
-
-
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Sachinanand99/File-Sharing-Telegram-bot&branch=main&name=FileStoreBot)
-
-
-#### Deploy in your VPS
-````bash
-git clone https://github.com/Sachinanand99/File-Sharing-Bot.git
-cd File-Sharing-Bot
-pip3 install -r requirements.txt
-# <Create config.py appropriately>
-#if you are using any hosting services use dotenvtemplate.txt for putting environment variables
-python3 main.py
-````
+ ━━━━━━━━━━━━━━━━━
 
 ## Basic Commands
 - `/start` - Check whether bot is online 🟢
