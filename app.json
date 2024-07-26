@@ -6,7 +6,7 @@
       "file",
       "sharing"
     ],
-    "repository": "https://github.com/Sachinanand99/File-Sharing-Telegram-bot",
+    "repository": "https://github.com/Codeflix-Bots/File-Store-Bot-Token-Verification",
     "logo": "https://ibb.co/FgPVtzw",
     "env": {
         "ADMINS" : {
