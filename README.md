@@ -9,7 +9,7 @@
  ━━━━━━━━━━━━━━━━━
 <details>
 <summary><h3>
-- <b> ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ ᴠᴀʀɪᴀʙʟᴇs(New features)</b>
+- <b> ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ ᴠᴀʀɪᴀʙʟᴇs (New features) •</b>
 </h3></summary>
 
 ## Basic Commands
