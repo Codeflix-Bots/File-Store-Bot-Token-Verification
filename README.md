@@ -11,7 +11,7 @@
 <summary><h3>
 - <b> ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ ᴠᴀʀɪᴀʙʟᴇs </b>
 </h3></summary>
-## Basic Commands
+##Basic Commands
 
 * `/start` - Check whether bot is online 
 * `/ping` - For checking ping of the bot 
