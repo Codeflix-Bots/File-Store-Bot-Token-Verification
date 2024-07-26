@@ -11,8 +11,8 @@
 <summary><h3>
 - <b> ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ ᴠᴀʀɪᴀʙʟᴇs </b>
 </h3></summary>
-##Basic Commands
 
+## Basic Commands
 * `/start` - Check whether bot is online 
 * `/ping` - For checking ping of the bot 
 * `/stats` - Uptime of the bot (admin only) 
@@ -94,14 +94,14 @@
 * `{uptime}` - Bot Uptime
 
 ### Required Environment Variables
-* TG_BOT_TOKEN
-* APP_ID
-* API_HASH
-* DB_URL
-* CHANNEL_LINK
-* CHANNEL_ID
-* OWNER_ID
-* OWNER_TAG
+* `TG_BOT_TOKEN`
+* `APP_ID`
+* `API_HASH`
+* `DB_URL`
+* `CHANNEL_LINK`
+* `CHANNEL_ID`
+* `OWNER_ID`
+* `OWNER_TAG`
 </details>
 
 Report Bugs, Give Feature Requests at <b>[ᴄᴏᴅᴇғʟɪx ʙᴏᴛs](https://t.me/codeflix_bots)  ➻  [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/CodeflixSupport) </b>
