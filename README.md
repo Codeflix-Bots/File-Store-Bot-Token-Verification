@@ -7,7 +7,8 @@
 * <b>𝟺 ғsᴜʙ - [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://github.com/Codeflix-Bots/FileStore/tree/multi-fsub)</b>
 
  ━━━━━━━━━━━━━━━━━
-
+<details>
+<summary><h3>
 ## Basic Commands
 - `/start` - Check whether bot is online 🟢
 - `/ping` - For checking ping of the bot 🔥
@@ -98,6 +99,7 @@
 * CHANNEL_ID
 * OWNER_ID
 * OWNER_TAG
+</details>
 
 Report Bugs, Give Feature Requests at <b>[ᴄᴏᴅᴇғʟɪx ʙᴏᴛs](https://t.me/codeflix_bots)  ➻  [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/CodeflixSupport) </b>
 
