@@ -12,12 +12,13 @@
 - <b> ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ ᴠᴀʀɪᴀʙʟᴇs </b>
 </h3></summary>
 ## Basic Commands
-* `/start` - Check whether bot is online 🟢
-* `/ping` - For checking ping of the bot 🔥
-* `/stats` - Uptime of the bot (admin only) ⏱️
-* `/users` - Total users active (admin only) 👥
-* `/batch` - To generate the link in batch (admin only) 🔗
-* `/genlink` - To generate link (admin only) 🔀
+
+* `/start` - Check whether bot is online 
+* `/ping` - For checking ping of the bot 
+* `/stats` - Uptime of the bot (admin only) 
+* `/users` - Total users active (admin only) 
+* `/batch` - To generate the link in batch (admin only) 
+* `/genlink` - To generate link (admin only) 
 * `/auth` - For using the bot which will send the ID to the owner's DM. The owner will add the admin to config file and restart the bot.
 * `/add_prem` - adding user to premium services(admins only)
 * `/restart` - For restarting the bot(admins only)
