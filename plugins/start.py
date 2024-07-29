@@ -17,7 +17,6 @@ from database.database import add_admin, add_user, del_admin, del_user, full_adm
 SECONDS = TIME 
 TUT_VID = f"{TUT_VID}"
 
-
 @Bot.on_message(filters.command('start') & filters.private & subscribed & subscribed2)
 async def start_command(client: Client, message: Message):
     id = message.from_user.id
@@ -40,7 +39,7 @@ async def start_command(client: Client, message: Message):
                 await update_verify_status(id, is_verified=True, verified_time=time.time())
                 if verify_status["link"] == "":
                     reply_markup = None
-                await message.reply(f"Your token successfully verified and valid for: 24 Hour ⏳", reply_markup=reply_markup, protect_content=False, quote=True)
+                await message.reply(f"Your token successfully verified and valid for: {get_exp_time(VERIFY_EXPIRE)} ⏳", reply_markup=reply_markup, protect_content=False, quote=True)
     if len(message.text) > 7:
         for i in range(1):
             if USE_SHORTLINK : 
@@ -77,7 +76,7 @@ async def start_command(client: Client, message: Message):
                     ids = [int(int(argument[1]) / abs(client.db_channel.id))]
                 except:
                     return
-            temp_msg = await message.reply("Please wait... 🫷")
+            temp_msg = await message.reply("Wait Bro...")
             try:
                 messages = await get_messages(client, ids)
             except:
@@ -105,7 +104,7 @@ async def start_command(client: Client, message: Message):
                 except: 
                     pass    
                 
-            notification_msg = await message.reply(f"<b>❗️ <u>Notice</u> ❗️</b>\n\n<b>This file will be  deleted in  {SECONDS // 60} minutes. Please save or forward it to your saved messages before it gets deleted.</b>")
+            notification_msg = await message.reply(f"<b>his file will be  deleted in  {SECONDS // 60} minutes. Please save or forward it to your saved messages before it gets deleted.</b>")
             await asyncio.sleep(SECONDS)    
             for snt_msg in snt_msgs:    
                 try:    
@@ -114,73 +113,72 @@ async def start_command(client: Client, message: Message):
                     pass    
             await notification_msg.edit("<b>Your file has been successfully deleted! 😼</b>")  
             return  
-    if (1 == 1):
-        for i in range(1):
-            if USE_SHORTLINK : 
-                if id not in ADMINS:
-                    try:
-                        if not verify_status['is_verified']:
-                            continue
-                    except:
-                        continue
-            reply_markup = InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("• ᴄʜᴀɴɴᴇʟs", callback_data="about"),
-                        InlineKeyboardButton("ᴄʟᴏsᴇ •", callback_data="close")
-                    ]
-                ]
-            )
-            await message.reply_text(
-                text=START_MSG.format(
-                    first=message.from_user.first_name,
-                    last=message.from_user.last_name,
-                    username=None if not message.from_user.username else '@' + message.from_user.username,
-                    mention=message.from_user.mention,
-                    id=message.from_user.id
-                ),
-                reply_markup=reply_markup,
-                disable_web_page_preview=True,
-                quote=True
-            )
-            return
-    if (1 == 1):
+    for i in range(1):
         if USE_SHORTLINK : 
-            if id in ADMINS:
-                return
-            verify_status = await get_verify_status(id)
-            if not verify_status['is_verified']:
-                token = ''.join(random.choices(string.ascii_letters + string.digits, k=10))
-                await update_verify_status(id, verify_token=token, link="")
-                link = await get_shortlink(SHORTLINK_API_URL, SHORTLINK_API_KEY,f'https://telegram.dog/{client.username}?start=verify_{token}')
-                if USE_PAYMENT:
-                    btn = [
-                    [InlineKeyboardButton("Click Here 👆", url=link),
-                    InlineKeyboardButton('How to open this link 👆', url=TUT_VID)],
-                    [InlineKeyboardButton("Buy Premium plan", callback_data="buy_prem")]
-                    ]
-                else:
-                    btn = [
-                    [InlineKeyboardButton("Click Here 👆", url=link)],
-                    [InlineKeyboardButton('How to open this link 👆', url=TUT_VID)]
-                    ]
-                await message.reply(f"Your Ads token is expired, refresh your token and try again. \n\nToken Timeout: {get_exp_time(VERIFY_EXPIRE)}\n\nWhat is the token?\n\nThis is an ads token. If you pass 1 ad, you can use the bot for 24 Hour after passing the ad", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
-                return
+            if id not in ADMINS:
+                try:
+                    if not verify_status['is_verified']:
+                        continue
+                except:
+                    continue
+        reply_markup = InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("• ᴄʜᴀɴɴᴇʟs", callback_data="about"),
+                    InlineKeyboardButton("ᴄʟᴏsᴇ •", callback_data="close")
+                ]
+            ]
+        )
+        await message.reply_text(
+            text=START_MSG.format(
+                first=message.from_user.first_name,
+                last=message.from_user.last_name,
+                username=None if not message.from_user.username else '@' + message.from_user.username,
+                mention=message.from_user.mention,
+                id=message.from_user.id
+            ),
+            reply_markup=reply_markup,
+            disable_web_page_preview=True,
+            quote=True
+        )
         return
+    if USE_SHORTLINK : 
+        if id in ADMINS:
+            return
+        verify_status = await get_verify_status(id)
+        if not verify_status['is_verified']:
+            token = ''.join(random.choices(string.ascii_letters + string.digits, k=10))
+            await update_verify_status(id, verify_token=token, link="")
+            link = await get_shortlink(SHORTLINK_API_URL, SHORTLINK_API_KEY,f'https://telegram.dog/{client.username}?start=verify_{token}')
+            if USE_PAYMENT:
+                btn = [
+                [InlineKeyboardButton("ᴄʟɪᴄᴋ ʜᴇʀᴇ", url=link),
+                InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ', url=TUT_VID)],
+                [InlineKeyboardButton("ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴ", callback_data="buy_prem")]
+                ]
+            else:
+                btn = [
+                [InlineKeyboardButton("ᴄʟɪᴄᴋ ʜᴇʀᴇ", url=link)],
+                [InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ', url=TUT_VID)]
+                ]
+            await message.reply(f"Your Ads token is expired, refresh your token and try again. \n\nToken Timeout: {get_exp_time(VERIFY_EXPIRE)}\n\nWhat is the token?\n\nThis is an ads token. If you pass 1 ad, you can use the bot for {get_exp_time(VERIFY_EXPIRE)} after passing the ad", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
+            return
+    return
 
 
     
-#=====================================================================================##
+#=====================================================================================#
 
 WAIT_MSG = """<b>Processing ...</b>"""
 
 REPLY_ERROR = """<code>Use this command as a replay to any telegram message without any spaces.</code>"""
 
-#=====================================================================================##
+#=====================================================================================#
 
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    buttons = [
+    if FORCE_SUB_CHANNEL & FORCE_SUB_CHANNEL2:
+        buttons = [
         [
             InlineKeyboardButton(
                 "ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ",
@@ -190,6 +188,14 @@ async def not_joined(client: Client, message: Message):
                 url=client.invitelink2),
         ]
     ]
+    elif FORCE_SUB_CHANNEL:
+        buttons = [
+            [
+                InlineKeyboardButton(
+                    "ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ",
+                    url=client.invitelink)
+            ]
+        ]
     try:
         buttons.append(
             [
@@ -214,6 +220,24 @@ async def not_joined(client: Client, message: Message):
         quote=True,
         disable_web_page_preview=True
     )
+
+
+@Bot.on_message(filters.command('ch2l') & filters.private)
+async def gen_link_encoded(client: Bot, message: Message):
+    try:
+        hash = await client.ask(text="Enter the code here... \n /cancel to cancel the operation",chat_id = message.from_user.id, timeout=60)
+    except Exception as e:
+        print(e)
+        await hash.reply(f"😔 some error occurred {e}")
+        return
+    if hash.text == "/cancel":
+        await hash.reply("Cancelled 😉!")
+        return
+    link = f"https://t.me/{client.username}?start={hash.text}"
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🎉 Click Here ", url=link)]])
+    await hash.reply_text(f"<b>🧑‍💻 Here is your generated link", quote=True, reply_markup=reply_markup)
+    return
+        
 
 @Bot.on_message(filters.command('users') & filters.private & filters.user(ADMINS))
 async def get_users(client: Bot, message: Message):
@@ -304,7 +328,7 @@ async def command_add_admin(client: Bot, message: Message):
             try:
                 reply_markup = InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("Join Channel 👆", url=CHANNEL_LINK)]
+                        [InlineKeyboardButton("ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=CHANNEL_LINK)]
                     ]
                 )
                 await client.send_message(
@@ -430,5 +454,3 @@ if USE_PAYMENT:
             print(e)
             await message.reply("Some error occurred.\nCheck logs.. 😖\nIf you got premium added message then its ok.")
         return
-
-        
