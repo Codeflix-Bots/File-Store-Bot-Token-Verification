@@ -13,6 +13,7 @@
 </h3></summary>
 
 ## Basic Commands
+* `/ch2l` - convert hash to link here 
 * `/start` - Check whether bot is online 
 * `/ping` - For checking ping of the bot 
 * `/stats` - Uptime of the bot (admin only) 
