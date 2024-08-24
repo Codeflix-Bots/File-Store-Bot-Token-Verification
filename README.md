@@ -1,182 +1,25 @@
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=FILE+SHARING+!;CREATED+BY+CODEFLIX+DEVELOPER!;A+ADVANCE+BOT+WITH+TOKEN+FEATURE!)
+</p>
 
 
-Telegram Bot to store posts and documents accessible via special links.
+* <b>𝟸 ғsᴜʙ - [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://github.com/Codeflix-Bots/FileStore)</b>
+* <b>ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ - [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://github.com/Codeflix-Bots/FileStore/tree/AutoDelete)</b>
+* <b>𝟺 ғsᴜʙ - [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://github.com/Codeflix-Bots/FileStore/tree/multi-fsub)</b>
 
-## 🚀 Overview
+ ━━━━━━━━━━━━━━━━━
+<details>
+<summary><h3>
+- <b> ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ᴠᴀʀɪᴀʙʟᴇs</b>
+</h3></summary>
 
-File Sharing Token Bot is a Telegram bot designed to store posts and documents, accessible through special links. This bot provides a convenient way to manage and share content within Telegram.
-
-### ✨ Features
-
+## Features
 - Store posts and documents.
 - Access content via special links.
 - Easy to deploy and customize.
 - Token Verifiction
 - Auto Deletion
 
-## 🛠️ Setup
-
-To deploy the bot, follow these steps:
-
-1. Add the bot to a database channel with all permissions.
-2. Add the bot to the ForceSub channel as an admin with "Invite Users via Link" permission if ForceSub is enabled.
-
-## 📦 Installation
-
-### Deploy on Heroku
-
-Click the button below to deploy the bot on Heroku:
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
-For a detailed deployment guide, watch [this tutorial video](https://youtu.be/7jBbBL9t9jI?si=j52MwTn41TXsc76l).
-
-### Deploy on Railway
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/1jKLr4)
-
-### Deploy on Koyeb
-
-Click the button below to deploy the bot on Koyeb:
-
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/sahildesai07/file-sharing-token-bot&branch=main&name=file-sharing-bot)
-
-### Deploy on Your VPS
-
-```bash
-git clone https://github.com/sahildesai07/file-sharing-token-bot
-cd file-sharing-token-bot
-pip3 install -r requirements.txt
-# <Create config.py appropriately>
-python3 main.py
-````
----
-## Deploy on VPS
----
-## Prerequisites
-
-### 1. Installing requirements
-
-- Clone this repo:
-
-```
-git clone https://github.com/sahildesai07/file-sharing-token-bot/ && cd file-sharing-token-bot
-```
-
-- For Debian based distros
-
-```
-sudo apt install python3 python3-pip
-```
-
-Install Docker by following the [Official docker docs](https://docs.docker.com/engine/install/#server).
-Or you can use the convenience script: `curl -fsSL https://get.docker.com |  bash`
-
-
-- For Arch and it's derivatives:
-
-```
-sudo pacman -S docker python
-```
-
-------
-
-### 2. Build And Run the Docker Image
-
-Make sure you still mount the app folder and installed the docker from official documentation.
-
-- There are two methods to build and run the docker:
-  1. Using official docker commands.
-  2. Using docker-compose.
-
-------
-
-#### Build And Run The Docker Image Using Official Docker Commands
-
-- Start Docker daemon (SKIP if already running, mostly you don't need to do this):
-
-```
-sudo dockerd
-```
-
-- Build Docker image:
-
-```
-sudo docker build . -t uxbbot
-```
-
-- Run the image:
-
-```
-sudo docker run -p 80:80 -p 8080:8080 uxbbot
-```
-
-- To stop the running image:
-
-```
-sudo docker ps
-```
-
-```
-sudo docker stop id
-```
-
-----
-
-#### Build And Run The Docker Image Using docker-compose
-
-**NOTE**: If you want to use ports other than 80 and 8080 change it in [docker-compose.yml](docker-compose.yml).
-
-- Install docker compose
-
-```
-sudo apt install docker-compose
-```
-
-- Build and run Docker image:
-
-```
-sudo docker-compose up --build
-```
-
-- To stop the running image:
-
-```
-sudo docker-compose stop
-```
-
-- To run the image:
-
-```
-sudo docker-compose start
-```
-
-- To get latest log from already running image (after mounting the folder):
-
-```
-sudo docker-compose up
-```
-
----
-
-Cmd to start the Bot: bash start.sh
-🔧 Admin Commands
-
-```
-start - start the bot or get posts
-
-batch - create link for more than one posts
-
-genlink - create link for one post
-
-users - view bot statistics
-
-broadcast - broadcast any messages to bot users
-
-stats - checking your bot uptime
-```
-
-🛠️ Variables
+### Variables
 
 * `API_HASH` Your API Hash from my.telegram.org
 * `APP_ID ` Your API ID from my.telegram.org
@@ -206,6 +49,7 @@ stats - checking your bot uptime
 * `VERIFY_EXPIRE` = ( ex. 86400)) # Add time in seconds
 
 
+
 ### Fillings
 #### START_MESSAGE | FORCE_SUB_MESSAGE
 
@@ -224,26 +68,66 @@ stats - checking your bot uptime
 
 * `{uptime}` - Bot Uptime
 
+</details>
 
-💬 Support
-Join Our [Telegram Group](https://www.telegram.dog/ultroidofficial_chat) For Support/Assistance And Our [Channel](https://www.telegram.dog/ultroid_official) For Updates.   
-   
-Report Bugs, Give Feature Requests There..   
+Report Bugs, Give Feature Requests at <b>[ᴄᴏᴅᴇғʟɪx ʙᴏᴛs](https://t.me/codeflix_bots)  ➻  [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/CodeflixSupport) </b>
 
-🎉 Credits
-
-Thanks to Dan for his awesome library. [Libary](https://github.com/pyrogram/pyrogram)
-Our support group members.
-
-📝 License
-GNU GPLv3 [![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html) 
-
-[FILE-SHARING-BOT](https://github.com/7thofficial/File-Sharing-Bot/) is Free Software: You can use, study share and improve it at your
-will. Specifically you can redistribute and/or modify it under the terms of the
-[GNU General Public License](https://www.gnu.org/licenses/gpl.html) as
-published by the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version. 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 
-   **Star this Repo if you Liked it ⭐⭐⭐**
+<details>
+<summary><h3>
+- <b> ᴅᴇᴘʟᴏʏᴍᴇɴᴛ ᴍᴇᴛʜᴏᴅs </b>
+</h3></summary>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
+</h3>
 
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Codeflix-Bots/File-Store-Bot-Token-Verification">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy On Heroku">
+</a></p>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ᴋᴏʏᴇʙ 」─
+</h3>
+<p align="center"><a href="https://app.koyeb.com/deploy?type=git&repository=github.com/Codeflix-Bots/File-Store-Bot-Token-Verification&branch=main&name=main">
+  <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy On Koyeb">
+</a></p>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʀᴀɪʟᴡᴀʏ 」─
+</h3>
+<p align="center"><a href="https://railway.app/deploy?template=https://github.com/Codeflix-Bots/File-Store-Bot-Token-Verification">
+     <img height="45px" src="https://railway.app/button.svg">
+</a></p>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʀᴇɴᴅᴇʀ 」─
+</h3>
+<p align="center"><a href="https://render.com/deploy?repo=https://github.com/Codeflix-Bots/File-Store-Bot-Token-Verification">
+<img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
+</a></p>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ᴠᴘs 」─
+</h3>
+<p>
+<pre>
+git clone https://github.com/Codeflix-Bots/File-Store-Bot-Token-Verification
+# Install Packages
+pip3 install -U -r requirements.txt
+Edit info.py with variables as given below then run bot
+python3 bot.py
+</pre>
+</p>
+</details>
+
+<h3>「 ᴄʀᴇᴅɪᴛs 」
+</h3>
+
+- <b>[ᴄᴏᴅᴇғʟɪx ʙᴏᴛs](https://t.me/codeflix_bots)  ➻  [ʙᴀsᴇ ᴄᴏᴅᴇ](https://t.me/codeflix_bots) </b>
+- <b>[sᴜʙᴀʀᴜ](https://github.com/erotixe)  ➻  [ᴇᴠᴇʀʏᴛʜɪɴɢ](https://t.me/cosmic_freak) </b>
+ 
+<b>ᴀɴᴅ ᴀʟʟ [ᴛʜᴇ ᴄᴏɴᴛʀɪʙᴜᴛᴏʀs](https://telegram.me/codeflix-bots) ᴡʜᴏ ʜᴇʟᴩᴇᴅ ɪɴ ᴍᴀᴋɪɴɢ  ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ ᴡɪᴛʜ ᴛᴏᴋᴇɴ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ᴜsᴇꜰᴜʟ & ᴩᴏᴡᴇʀꜰᴜʟ 🖤 </b>
+
+## 📌  𝑵𝒐𝒕𝒆
+
+ᴊᴜꜱᴛ ꜰᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴇᴅɪᴛ ᴀꜱ ᴘᴇʀ ʏᴏᴜʀ ɴᴇᴇᴅꜱ.
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
