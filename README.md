@@ -26,26 +26,26 @@
 * `TG_BOT_TOKEN` Your bot token from @BotFather
 * `OWNER_ID` Must enter Your Telegram Id
 * `CHANNEL_ID` Your Channel ID eg:- -100xxxxxxxx
-* `DB_URI ` Your mongo db url [tutorial video](https://youtu.be/qFB0cFqiyOM).
+* `DB_URI ` Your mongo db url 
 * `DB_name ` Your mongo db session name ( random )
 * `ADMINS` Optional: A space separated list of user_ids of Admins, they can only create links
-* `START_MESSAGE` Optional: start message of bot, use HTML and <a href='https://github.com/codexbotz/File-Sharing-Bot/blob/main/README.md#start_message'>fillings</a>
+* `START_MESSAGE` Optional: start message of bot, use HTML and <a href='https://github.com/#start_message'>fillings</a>
 * `FORCE_SUB_MESSAGE`Optional:Force sub message of bot, use HTML and Fillings
 * `FORCE_SUB_CHANNEL` Optional: ForceSub Channel ID, leave 0 if you want disable force sub
 * `PROTECT_CONTENT` Optional: True if you need to prevent files from forwarding
 
 ### Extra Variables
 
-* `CUSTOM_CAPTION` put your Custom caption text if you want Setup Custom Caption, you can use HTML and <a href='https://github.com/7thofficial/File-Sharing-Bot/blob/main/README.md#custom_caption'>fillings</a> for formatting (only for documents)
+* `CUSTOM_CAPTION` put your Custom caption text if you want Setup Custom Caption, you can use HTML and <a href='https://github.com/#custom_caption'>fillings</a> for formatting (only for documents)
 * `DISABLE_CHANNEL_BUTTON` Put True to Disable Channel Share Button, Default if False
-* `BOT_STATS_TEXT` put your custom text for stats command, use HTML and <a href='https://github.com/7thofficial/File-Sharing-Bot/blob/main/README.md#custom_stats'>fillings</a>
+* `BOT_STATS_TEXT` put your custom text for stats command, use HTML and <a href='https://github.com/.md#custom_stats'>fillings</a>
 * `USER_REPLY_TEXT` put your text to show when user sends any message, use HTML
 
 ### Token Variables
 
 * `IS_VERIFY` = Default : "True" (if you want off : False )
 * `SHORTLINK_URL` = Your shortner Url ( ex. "api.shareus.io")
-* `SHORTLINK_API` = Your shortner API (ex. "PUIAQBIFrydvLhIzAOeGV8yZppu2")
+* `SHORTLINK_API` = Your shortner API (ex. "PUIAQBIFrydvLhIzAOeGV8yZppu")
 * `VERIFY_EXPIRE` = ( ex. 86400)) # Add time in seconds
 
 
