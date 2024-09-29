@@ -13,7 +13,6 @@
 </h3></summary>
 
 ## Basic Commands
-* `/ch2l` - convert hash to link here 
 * `/start` - Check whether bot is online 
 * `/ping` - For checking ping of the bot 
 * `/stats` - Uptime of the bot (admin only) 
@@ -24,8 +23,8 @@
 * `/unauth` - remove user to premium list(admins only)
 * `/restart` - For restarting the bot(admins only)
 * `/admins` - list all admins(admins only)
-* `/add_admin` - For adding new admins(owner only) restart recommended
-* `/del_admin` - For removing admins(owner only) restart recommended
+* `/addadmin` - For adding new admins(owner only) restart recommended
+* `/deladmin` - For removing admins(owner only) restart recommended
 
 ## Secret Commands
 * `/broadcast` - Reply to any message to broadcast it to all users(owner only).
@@ -55,18 +54,6 @@
 * `SHORTLINK_API_KEY` shortner api key.
 * `VERIFY_EXPIRE` verify expire time in seconds.
 * `TUT_VID` Verification tutorial video link. eg: https://t.me/How_to_Download_7x/32
-
-
-## Premium Verification variable
-* `USE_PAYMENT` Turn this feature on or off using True of False
-* `UPI_ID` Enter your UPI id
-* `UPI_IMAGE_URL` Enter your UPI QR
-* `SCREENSHOT_URL` Enter your profile link for verification of the users
-* `PRICE1` 7 days price
-* `PRICE2` 1 month price
-* `PRICE3` 3 month price
-* `PRICE4` 6 month price
-* `PRICE5` 1 year price
 
 ### Extra Variables
 
@@ -105,7 +92,7 @@
 * `OWNER_TAG`
 </details>
 
-Report Bugs, Give Feature Requests at <b>[ᴄᴏᴅᴇғʟɪx ʙᴏᴛs](https://t.me/codeflix_bots)  ➻  [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/CodeflixSupport) </b>
+ʀᴇᴘᴏʀᴛ ʙᴜɢꜱ, ɢɪᴠᴇ ғᴇᴀᴛᴜʀᴇ ʀᴇǫᴜᴇꜱᴛꜱ ᴀᴛ <b>[ᴄᴏᴅᴇғʟɪx ʙᴏᴛs](https://t.me/codeflix_bots)  ➻  [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/CodeflixSupport) </b>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
