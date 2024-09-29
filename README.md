@@ -20,8 +20,8 @@
 * `/users` - Total users active (admin only) 
 * `/batch` - To generate the link in batch (admin only) 
 * `/genlink` - To generate link (admin only) 
-* `/auth` - For using the bot which will send the ID to the owner's DM. The owner will add the admin to config file and restart the bot.
-* `/add_prem` - adding user to premium services(admins only)
+* `/auth` - adding user to premium services(admins only)
+* `/unauth` - remove user to premium list(admins only)
 * `/restart` - For restarting the bot(admins only)
 * `/admins` - list all admins(admins only)
 * `/add_admin` - For adding new admins(owner only) restart recommended
