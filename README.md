@@ -23,7 +23,9 @@
 * `ADMINS` Optional: A space separated list of user_ids of Admins, they can only create links
 * `START_MESSAGE` Optional: start message of bot, use HTML and <a href='https://github.com/#start_message'>fillings</a>
 * `FORCE_SUB_MESSAGE`Optional:Force sub message of bot, use HTML and Fillings
-* `FORCE_SUB_CHANNEL` Optional: ForceSub Channel ID, leave 0 if you want disable force sub
+
+* `FORCE_SUB_CHANNEL` = Optional: ForceSub Channel ID, leave 0 if you want disable force sub
+* `FORCESUB_CHANNEL2` = Optional: ForceSub 2 Channel ID, leave 0 if you want disable force sub
 * `PROTECT_CONTENT` Optional: True if you need to prevent files from forwarding
 
 ### Extra Variables
@@ -39,6 +41,7 @@
 * `SHORTLINK_URL` = Your shortner Url ( ex. "api.shareus.io")
 * `SHORTLINK_API` = Your shortner API (ex. "PUIAQBIFrydvLhIzAOeGV8yZppu")
 * `VERIFY_EXPIRE` = ( ex. 86400)) # Add time in seconds
+* `TUT_VID` = your tutorial video link
 
 
 
