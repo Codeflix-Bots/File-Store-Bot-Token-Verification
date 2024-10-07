@@ -10,6 +10,7 @@
 - Easy to deploy and customize.
 - Token Verifiction
 - Auto Deletion
+- premium management system
 
 ### Variables
 
@@ -19,7 +20,7 @@
 * `OWNER_ID` Must enter Your Telegram Id
 * `CHANNEL_ID` Your Channel ID eg:- -100xxxxxxxx
 * `DB_URI ` Your mongo db url 
-* `DB_name ` Your mongo db session name ( random )
+* `DB_NAME ` Your mongo db session name ( random )
 * `ADMINS` Optional: A space separated list of user_ids of Admins, they can only create links
 * `START_MESSAGE` Optional: start message of bot, use HTML and <a href='https://github.com/#start_message'>fillings</a>
 * `FORCE_SUB_MESSAGE`Optional:Force sub message of bot, use HTML and Fillings
